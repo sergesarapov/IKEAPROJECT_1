@@ -1,0 +1,192 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: Verdana;
+  -webkit-user-select: none;
+}
+#logo {
+  position: absolute;
+  height: 35px;
+  margin: 35px 0 0 35px;
+}
+
+body {
+  background-image: url(../images/ikea_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-image: url(../images/ikea_design.jpg);*/
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+/*Bottom menu*/
+
+#menu {
+  position: relative;
+  height: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+
+
+#menu div {
+  font-size: 14px;
+  padding-left: 25px;
+  padding-right: 25px;
+  overflow: hidden;
+}
+
+#menu  #sound {
+  -webkit-transform: rotate(-90deg);
+  padding-top: 4px;
+}
+
+#random, #city, #share {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 0;
+  cursor: pointer;
+}
+
+ #random {
+  border-top: 50px solid;
+  border-color: transparent;
+  background-clip: padding-box;
+  background-color: rgba(45, 168, 195, 0.9);
+  padding: 11px;
+  margin-right: 400px;
+  margin-bottom: -28px;
+  transition: all .2s;
+}
+
+#random:hover {
+  margin-bottom: 0;
+  transition: all .2s;
+}
+
+
+#city {
+  border-top: 50px solid;
+  border-color: transparent;
+  background-clip: padding-box;
+  background-color: rgba(136, 66, 166, 0.9);
+
+  padding: 11px;
+  margin-right: 196px;
+  margin-bottom: -28px;
+  transition: all .2s;
+}
+
+#city:hover {
+  margin-bottom: 0;
+  transition: all .2s;
+}
+
+
+
+#share {
+  border-top: 50px solid;
+  border-color: transparent;
+  background-clip: padding-box;
+  background-color: rgba(247, 110, 60, 0.9);
+  padding: 11px;
+  padding-top: 9px;
+  margin-bottom: -28px;
+  transition: all .2s;
+}
+
+#share:hover {
+  margin-bottom: 0;
+  transition: all .2s;
+}
+
+#share span {
+  margin-left: 5px;
+}
+
+/*round section*/
+
+#round {
+  position:absolute;
+  width: 130px;
+  height: 130px;
+  background-color: rgb(240, 95, 116);
+  background-clip: padding-box;
+  bottom: -131px;
+  left:-120px;
+  text-align: center;
+  line-height: 130px;
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 50px solid;
+  border-color: transparent;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+#round:hover {
+  transform: translate(80px, -90px);
+  transition: all .2s;
+}
+
+#deg {
+  font-size: 30px;
+}
+
+/*sidebar section*/
+
+.sidebar {
+  position: absolute;
+  width: 370px;
+  height: 180px;
+  right: -360px;
+  top: 280px;
+  background-color: rgb(33, 152,  132);
+  background-clip: padding-box;
+  border-left: 30px solid;
+  border-color: transparent;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.show {
+  right: 0;
+  transition: all .2s;
+}
+
+.hovered:hover {
+  right: -350px;
+}
+
+
+#sidebar p {
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: normal;
+  color: white;
+  margin-left: 20px;
+}
+
+#sidebar button {
+  position: absolute;
+  top: 133px;
+  left: 184px;
+  height: 30px;
+  background-color: rgb(247, 110, 60);
+  border: 0;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(186,184,186,1);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(186,184,186,1);
+  box-shadow: 0px 0px 3px 0px rgba(186,184,186,1);
+  color: white;
+  cursor: pointer;
+}
